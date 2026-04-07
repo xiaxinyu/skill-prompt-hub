@@ -7,6 +7,7 @@
 性能与成本优化：在追求可观测性的同时，必须考虑Prometheus的查询性能和存储成本（避免过高基数）。
 
 具体优化要求
+错误检查： 保证报表的准确性
 布局与比例：请规划合理的行（Row）和面板（Panel）布局。顶部应为核心状态概览（Stat/Graph），中部为趋势图（TimeSeries），底部为详细数据表（Table）。
 图表类型建议：针对不同类型的指标（如延迟直方图、请求计数、TCP连接），推荐最合适的Grafana可视化类型（如Heatmap, TimeSeries, Gauge）。
 PromQL查询优化：提供关键的PromQL查询语句示例，特别是针对Istio标准指标（如istio_requests_total, istio_request_duration_milliseconds_bucket）的计算，需包含rate()函数和直方图量化处理。
