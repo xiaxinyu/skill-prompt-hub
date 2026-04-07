@@ -11,6 +11,7 @@
 图表类型建议：针对不同类型的指标（如延迟直方图、请求计数、TCP连接），推荐最合适的Grafana可视化类型（如Heatmap, TimeSeries, Gauge）。
 PromQL查询优化：提供关键的PromQL查询语句示例，特别是针对Istio标准指标（如istio_requests_total, istio_request_duration_milliseconds_bucket）的计算，需包含rate()函数和直方图量化处理。
 变量与交互：建议必要的Grafana变量（如namespace, workload, source/destination），以便实现报表的动态过滤。
+报表说明：给每一个报表都给一个说明，说明报表的用途，用户可以通过图表了解具体的信息，和如何使用报表。
 
 请输出
 报表结构大纲：描述每一行应该放什么图表，以及为什么这样放。
